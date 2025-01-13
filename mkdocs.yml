@@ -3,12 +3,10 @@ nav:
   - Charakteristika předmětu: index.md
   - Cvičení:
       - Úloha 1 – Metody vizualizace fotogrammetrických modelů ve virtuální realitě s využitím Unreal Engine: cviceni/cviceni1.md 
-      - Úloha 2 - Procedurální modelování: cviceni/cviceni2.md
-      - Pokročilejší využití JavaScriptu: cviceni/cviceni3.md
-      - Úloha 2 – VS Code, Netlify. Mapová aplikace v prostředí Leaflet: cviceni/cviceni4.md
-      - Úloha 3A – Knihovna D3.js: cviceni/cviceni5.md
-      - Úloha 3B – Vylepšení aplikace pomocí D3.js – grafy, diagramy, pop-upy: cviceni/cviceni6.md
-
+      - Úloha 2 - Základy 3D v ArcGIS Pro: cviceni/cviceni2.md
+      - Úloha 3 - 3D tisk geodat: cviceni/cviceni3.md
+      - Úloha 4 - Web AR: cviceni/cviceni4.md
+      - Úloha 5 - Unity AR: cviceni/cviceni5.md
   # - Data: data.md
 
 plugins:
