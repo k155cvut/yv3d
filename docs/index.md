@@ -3,58 +3,58 @@
 
 Tento povinně-volitelný předmět představuje možnosti vizualizace trojrozměrných modelů pomocí moderních technologií.
 
-DOPLNIT POPIS
+Postupně se představí několik různých způsobů zpracování a vizualizace 3D prostorových dat, a to fotogrammetrických, GIS či kartografických. První část předmětu se soustředí na představení herního enginu Unreal Engine, ve kterém lze vizualizovat fotogrammetrická data v prostředí virtuální reality. Následuje ukázka práce s 3D GIS daty v ArcGIS Pro a ArcGIS Online. Tyto znalosti budou rozvíjeny základy procedurálního modelování s využitím softwaru City Engine. Dále budou představeny možnosti 3D tisku prostorových GIS dat. Závěrem semestru se pak přesuneme k vizualizaci geodat v rozšířené realitě, a to jak ve webovém prohlížeči, tak s využitím dedikované mobilní aplikace vyvinuté pomocí herního enginu Unity.
+
 
 <h2 style="text-align:center;">Naučíte se</h2>
 <!-- styl je zde pridany HTML tagem (ne pomoci '##'), aby se text neobjevil v tabulce obsahu vlevo na strance -->
 
 <div class="grid cards grid_icon_info smaller_padding" markdown> <!-- specificky format gridu (trida "grid_icon_info") na miru uvodni strance predmetu -->
 
--   :octicons-code-16:{ .xl }
+-   :simple-unrealengine:{ .xl }
 
-    základy __HTML__, __CSS__ a __JavaScriptu__
+    pracovat s __Unreal Engine__
 
--   :material-map-outline:{ .xl }
+-   :fontawesome-solid-vr-cardboard:{ .xl }
 
-    __vyvíjet__ interaktivní webové mapové aplikace
+    zobrazit data ve __virtuální realitě__
 
--   :material-leaf-circle-outline:{ .xl }
+-   :fontawesome-solid-photo-film:{ .xl }
 
-    využívat open-source mapové knihovny jako třeba __Leaflet__ či __OpenLayers__
+    pokročilou tvorbu a editaci __fotogrammetrických__ modelů
 
 -   :simple-materialdesignicons:{ .xl }
 
-    __vizualizovat__ geoprostorová data na webu
+    psát __CGA__ kód a generovat __procedurální__ krajinu nebo města
 
--   :material-tools:{ .xl }
+-   :material-printer-3d-nozzle:{ .xl }
 
-    pochopit fungování webových __serverů__
+    připravit prostorová data pro __3D tisk__
 
 
--   :octicons-graph-16:{ .xl }
+-   :simple-unity:{ .xl }
 
-    vytvořit interaktivní __infografiku__ a propojit jí s mapou
+    vytvořit __mobilní aplikaci__ pomocí herního enginu __Unity__
 
 -   :simple-arcgis:{ .xl }
 
-    __sdílet__ data prostřednictvím webu (systém _ArcGIS Online_, webové mapové aplikace)
+    pracovat s __3D GIS__ daty v ArcGIS Pro a ArcGIS Online
 
--   :simple-qgis:{ .xl }
+-   :material-augmented-reality:{ .xl }
 
-    __publikovat__ webové mapové aplikace s využití open-source softwaru __QGIS__
+    vizualizovat prostorová data v prostředí __rozšířené reality__
 
 
 </div>
 
 <div class="gallery_container" markdown>
-![](../assets/main/01.png){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/02.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/03.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/04.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/05.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/06.jpg){: .no-filter }
-![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/07.jpg){: .no-filter }
-
+![](https://dev.epicgames.com/community/api/learning/image/182adf38-1d2d-4ae8-af7a-fe435a08649f?resizing_type=fit){: .no-filter }
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHoVA4sqB8tfISS6vEFdD52JOjhyuG-gwEug&s){: .no-filter }
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8luRFuqJlHFOMrLaXhF8MEcgdvjHrGNqwQ&s){: .no-filter }
+![](https://www.esri.com/content/dam/esrisites/en-us/arcgis/products/city-engine/assets/overview-tls-urban-planning.jpg){: .no-filter }
+![](https://www.arcdata.cz/content/dam/distributor-share/arcdata-cz/arcgis/arcgis-cityengine/city-engine-tabcontent-5-steps-4-add-details.jpg){: .no-filter }
+![](https://reko3d.com/wp-content/uploads/2023/09/AR-plane-city-1920x1024.jpg){: .no-filter }
+![](https://images.ctfassets.net/26961o1141cc/4BIQBpSBwswwxyqEFdCrCy/1ab81641cd6118bfccd464929cf3781f/Plan_1.PNG?w=1626&h=914&fm=webp&q=100){: .no-filter }
 
 </div>
 
@@ -71,19 +71,19 @@ DOPLNIT POPIS
 jsou spíše formou workshopu a bezprostředně předcházejí cvičením, s nimiž se mnohdy prolínají
 {: style="opacity:50%;margin-top:0;"}
 
-__Ing. Tomáš Janata, Ph.D.__ | __Mgr. Petra Justová, Ph.D.__ | __Ing. František Mužík__
+__Ing. Karel Pavelka__ | __Ing. Vojtěch Cehák__ | __Ing. František Mužík__ | __Ing. Michal Janovský, PhD.__
 
-1. Motivace k webové kartografii, úvod. Představení prostředí a technik. Přístupy k tvorbě webového obsahu. Webový server, typy serverů. Hosting
-2. Webový server – konfigurace. DNS, propojení obsahu s doménou. Základy JavaScript – datové typy, proměnné. Funkce, pole, řetězce, moderní operátory, cykly. DevTools, konzole, debug, responsivita.
-3. Základy JavaScript – DOM, asynchronní přenos, události, objektové typy. JSON, odkazování do souborů a načítání ze souborů.
-4. Mapové knihovny – Leaflet, OpenLayers, MapTiler. Leaflet – základní informace. Leaflet – mapový objekt, symbolika, prostorové dotazování, pop-up. Mapové elementy a rozdíly oproti konvenční kartografii.
-5. Tvorba pokročilejších aplikací v Leaflet
-6. Vstupní a výstupní formáty souborů. GeoJSON, souborové databáze, GeoPackage. Vektorové a rastrové dlaždice
-7. Javascriptové knihovny a prostředí pro tvorbu map. D3JS.
-8. Serverové fungování, nastavení, širší vztahy webového mapování. Apache, IIS
-9. Základy ArcGIS JavaScript API. Práce s WebMap
-10. ArcGIS JavaScript API – pokročilé možnosti. Feature Collection
-11. Ladění a škálování aplikací. Další API prostředí – CARTO.db, Mapbox aj. MapTiler, OSM
+1. Představení možností vizualizace 3D prostorových dat moderními technologiemi.
+2. Základy Unreal Engine. Seznámení s uživatelským prostředím.
+3. Pokročilé editace fotogtammetrických modelů. Moderní metody ve fotogrammetrii.
+4. Vizualizace 3D dat ve virtuální realitě.
+5. Práce s 3D GIS daty v ArcGIS Pro. Publikace a správa trojrozměrných dat na ArcGIS Online.
+6. Seznámení s procedurálním modelováním. Základy City Engine.
+7. Pokročilejší psaní CGA kódu. Propojení s přípravou dat v ArcGIS Pro.
+8. Příprava dat pro 3D tisk. Základy 3D tisku.
+9. Představení rozšířené reality (markerless AR, marker AR). WebXR, webové JS knihovny.
+10. Využití herního enginu Unity. Tvorba mobilní aplikace pro Android v Unity.
+11. Location-based AR. Uživatelské testování a publikace aplikací.
 
 ## Harmonogram {: style="margin-bottom:0;"}
 
