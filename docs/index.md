@@ -58,34 +58,48 @@ Postupně se představí několik různých způsobů zpracování a vizualizace
 
 </div>
 
-<!-- ## Doporučená literatura
-
-1. Kolář, J.: Geografické informační systémy 10. Vydavatelství ČVUT, Praha 1998.
-2. Rapant, P. (2006): Geoinformatika a geoinformační technologie. VŠB-TU Ostrava, 500 str. ISBN 80-248-1264-9.
-3. Břehovský, M., Jedlička, K. (2005): Přednáškové texty pro Úvod do GIS. ZČU Plzeň, 116 s.
-4. Hrubý M.: Geografické Informační Systémy (GIS) - Studijní opora. VÚT v Brně, 91 str.
-5. Tuček J.: Geografické informační systémy, Praha Computer Press, 1998. -->
 
 ## Přednášky {: style="margin-bottom:0;"}
+
+[__Ing. Karel Pavelka__](https://geomatics.fsv.cvut.cz/employees/karel-pavelka-ml/) | [__Ing. Vojtěch Cehák__](https://geomatics.fsv.cvut.cz/employees/vojtech-cehak/)  | [__Ing. Michal Janovský, PhD.__](https://geomatics.fsv.cvut.cz/employees/michal-janovsky/) | [__Ing. František Mužík__](https://geomatics.fsv.cvut.cz/employees/frantisek-muzik/)
+
 
 jsou spíše formou workshopu a bezprostředně předcházejí cvičením, s nimiž se mnohdy prolínají
 {: style="opacity:50%;margin-top:0;"}
 
-__Ing. Karel Pavelka__ | __Ing. Vojtěch Cehák__ | __Ing. František Mužík__ | __Ing. Michal Janovský, PhD.__
+1. Představení možností vizualizace 3D prostorových dat moderními technologiemi. Základy 3D tisku. 
+2. 3D tisk prostorových dat. Ukázka pokročilejších možností 3D tisku včetně vícebarevného tisku.
+3. Práce s 3D GIS daty v ArcGIS Pro. Publikace a správa trojrozměrných dat na ArcGIS Online.
+4. Seznámení s procedurálním modelováním. Základy City Engine a psaní CGA kódu.
+5. Základy Unreal Engine. Seznámení s uživatelským prostředím.
+6. Představení virtuální reality. Příprava 3D modelů pro virtuální realitu.
+7. Pokročilé editace fotogtammetrických modelů. Moderní metody ve fotogrammetrii.
+8. Vizualizace 3D dat ve virtuální realitě.
+9. Pokročilejší vizualizace v UE.
+10. Představení rozšířené reality. WebXR, webové JS knihovny.
+11. Využití herního enginu Unity. Tvorba mobilní aplikace pro Android v Unity.
 
-1. Představení možností vizualizace 3D prostorových dat moderními technologiemi.
-2. Základy Unreal Engine. Seznámení s uživatelským prostředím.
-3. Pokročilé editace fotogtammetrických modelů. Moderní metody ve fotogrammetrii.
-4. Vizualizace 3D dat ve virtuální realitě.
-5. Práce s 3D GIS daty v ArcGIS Pro. Publikace a správa trojrozměrných dat na ArcGIS Online.
-6. Seznámení s procedurálním modelováním. Základy City Engine.
-7. Pokročilejší psaní CGA kódu. Propojení s přípravou dat v ArcGIS Pro.
-8. Příprava dat pro 3D tisk. Základy 3D tisku.
-9. Představení rozšířené reality (markerless AR, marker AR). WebXR, webové JS knihovny.
-10. Využití herního enginu Unity. Tvorba mobilní aplikace pro Android v Unity.
-11. Location-based AR. Uživatelské testování a publikace aplikací.
+
 
 ## Harmonogram {: style="margin-bottom:0;"}
+Harmonogram je platný pro zimní semestr 2025/26.
+{: style="opacity:50%;margin-top:0;"}
+
+| Datum       | Téma                                                                 |
+|-------------|----------------------------------------------------------------------|
+| 23.9.2025   | Základy 3D tisku                                                     |
+| 30.9.2025   | 3D tisk prostorových dat (projekt AMUSE – virtuální muzeum)          |
+| 7.10.2025   | Úvod do 3D GIS                                                       |
+| 14.10.2025  | Úvod do procedurálního modelování                                    |
+| 21.10.2025  | Práce s rastry, procedurální generování vegetace v Unreal Enginu (UE)|
+| 4.11.2025   | Příprava 3D modelů pro virtuální realitu                             |
+| 11.11.2025  | Tvorba virtuálního muzea v UE                                        |
+| 18.11.2025  | Pokročilé práce v UE                                                 |
+| 25.11.2025  | Pokročilé práce v UE                                                 |
+| 2.12.2025   | Webová rozšířená realita                                             |
+| 9.12.2025   | Tvorba mobilní aplikace v Unity                                      |
+| 16.12.2025  | Zkouška – 1. termín                                                  |
+
 
 <!--
 [![](./assets/index/schedule.svg#only-light){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
