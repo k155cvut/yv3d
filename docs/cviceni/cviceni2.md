@@ -181,6 +181,24 @@ Po slicování si můžeme znontrolovat přidání nových parametrů tisku.
     <figcaption>Ukázka obrysu a čistící věže po vyslicování modelu</figcaption>
 </figure>
 
+### 6) Export modelu pro tisk
+
+Jestliže máme model připravený pro 3D tisk, existují dvě možnosti, jak jej exportovat do tiskárny. 
+
+- Wifi tisk, pro který je potřeba spárovat konkrétní 3D tiskárnu s PrusaSlicerem na počítaci.
+
+- Export ve formátu G-code, který do tiskárny přesuneme pomocí přenosného USB disku.
+
+Po vyslicování modelu se zobrazí buď jedna nebo obě možnosti (dle předchozího párování s tiskárnou). V tomto případě využijeme možnosti *Exportovat G-code*. Soubor přesuneme na přenosný USB disk a následně jej vložíme do tiskárny manuálně.
+
+<figure markdown>
+![](../assets/cviceni2/export.png){ width="1000" }
+    <figcaption>Export modelu pro tisk</figcaption>
+</figure>
+
+!!! warning "&nbsp;<span>Odevzdání úlohy</span>"
+    Připravený G-code ve tvaru **"prijmeni_jmeno_misto.bgcode"** odešlete na mail ```frantisek.muzik@fsv.cvut.cz``` do **úterý 21.10.2025** s informací, zda máte zájem o tisk fyzického modelu. 
+
 !!! note "&nbsp;<span>Další zajímavé informace</span>"
     - 7 věcí, které ovlivňují kvalitu tisku: <https://josefprusa.cz/7-veci-ktere-ovlivnuji-kvalitu-tisku/>
 
