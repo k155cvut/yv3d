@@ -144,3 +144,48 @@ Na tomto příkladu si vybereme barvy následovně:
     <figcaption>Výsledný barevný model</figcaption>
 </figure>
 
+Dále musíme určit vhodné **filamenty** a jejich parametry. V základním nastavení se zobrazují pouze některé profily filamentů (liší se například výrobcem). V ideálním případě je vhodné začít s předem definovanými profily filamentů, tedy například *Prusament PLA*. 
+
+Vybraný profil je možné editovat dle libosti (doporučeno až po porozumění základů 3D tisku). Nejčastěji upravovanými parametry jsou teplota či [retrakce](https://help.prusa3d.com/cs/article/stringovani-a-odkapavani-filamentu_1805).
+
+!!! tip "&nbsp;<span>Tip</span>"
+    Základní profily filamentů nelze přepsat. Pro jejich editaci je potřeba vytvořit kopii, kterou pak lze upravovat dle potřeby.
+
+    Rozsáhlejší návod pro nastavení parametrů filamentu: <https://youtu.be/Wxh3fsE_4Do?si=YGSaU8TLZua7pJ7I>
+
+<figure markdown>
+![](../assets/cviceni2/filamenty.png){ width="1000" }
+    <figcaption>Nastavení filamentů v PrusaSlicer</figcaption>
+</figure>
+
+Pro zkvalitnění tisku můžeme v PrusaSliceru zapnout některá další nastavení. V tomto případě se bude jednat o **obrys** a **čistící věž**. Pro zlepšení přilnavosti je možné zapnout také límec. 
+
+Obrys je tištěná linka ohraničující všechny modely na tiskové podložce. Obrys je tištěn vždy jako první a jeho hlavním učelem je stabilizovat průtok nataveného filamentu tryskou. Nastavíme jej v záložce *Nastavení tisku* :material-arrow-right: *Obrys a límec*. Přepíšeme počet smyček na 1. Ve stejné záložce je možné měnit parametry i pro límec. 
+
+<figure markdown>
+![](../assets/cviceni2/obrys_limec.png){ width="600" }
+    <figcaption>Nastavení obrysu a límce</figcaption>
+</figure>
+
+Čistící věž je na tiskové podložce kvůli tomu, aby bylo možno zajistit ostré přechody barev a stabilní posun filamentu i po změně barvy. Využívá se tedy v případě multimateriálového (=barevného) tisku. Její nastavení nalezneme opět v záložce *Nastavení tisku* :material-arrow-right: *Více extruderů*.
+
+<figure markdown>
+![](../assets/cviceni2/cvez.png){ width="600" }
+    <figcaption>Nastavení čistící věže</figcaption>
+</figure>
+
+Po slicování si můžeme znontrolovat přidání nových parametrů tisku.
+
+<figure markdown>
+![](../assets/cviceni2/obrys_cvez.png){ width="800" }
+    <figcaption>Ukázka obrysu a čistící věže po vyslicování modelu</figcaption>
+</figure>
+
+!!! note "&nbsp;<span>Další zajímavé informace</span>"
+    - 7 věcí, které ovlivňují kvalitu tisku: <https://josefprusa.cz/7-veci-ktere-ovlivnuji-kvalitu-tisku/>
+
+    - Obrys a límec: <https://help.prusa3d.com/cs/article/obrys-a-limec_133969>
+
+    - Rafts, Skirts and Brims!: <https://www.simplify3d.com/resources/articles/rafts-skirts-and-brims/>
+
+    - Čistící věž: <https://help.prusa3d.com/cs/article/chytra-cistici-vez_125010>
