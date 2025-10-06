@@ -174,7 +174,7 @@ Obrys je tištěná linka ohraničující všechny modely na tiskové podložce.
     <figcaption>Nastavení čistící věže</figcaption>
 </figure>
 
-Po slicování si můžeme znontrolovat přidání nových parametrů tisku.
+Po slicování si můžeme zkontrolovat přidání nových parametrů tisku.
 
 <figure markdown>
 ![](../assets/cviceni2/obrys_cvez.png){ width="800" }
@@ -187,9 +187,9 @@ Jestliže máme model připravený pro 3D tisk, existují dvě možnosti, jak je
 
 - Wifi tisk, pro který je potřeba spárovat konkrétní 3D tiskárnu s PrusaSlicerem na počítaci.
 
-- Export ve formátu G-code, který do tiskárny přesuneme pomocí přenosného USB disku.
+- Export ve formátu G-code, který do tiskárny přesuneme pomocí přenosného USB flash disku.
 
-Po vyslicování modelu se zobrazí buď jedna nebo obě možnosti (dle předchozího párování s tiskárnou). V tomto případě využijeme možnosti *Exportovat G-code*. Soubor přesuneme na přenosný USB disk a následně jej vložíme do tiskárny manuálně.
+Po vyslicování modelu se zobrazí buď jedna nebo obě možnosti (dle předchozího párování s tiskárnou). V tomto případě využijeme možnosti *Exportovat G-code*. Soubor přesuneme na přenosný USB flash disk a následně jej vložíme do tiskárny manuálně.
 
 <figure markdown>
 ![](../assets/cviceni2/export.png){ width="1000" }
