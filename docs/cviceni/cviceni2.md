@@ -196,8 +196,11 @@ Po vyslicování modelu se zobrazí buď jedna nebo obě možnosti (dle předcho
     <figcaption>Export modelu pro tisk</figcaption>
 </figure>
 
+!!! tip "&nbsp;<span>Tip</span>"
+    Při tvorbě vlastního rámečku např. ve SketchUpu je nutné počítat s přesností 3D tisku. Je tedy vhodné vnitřní prostor rámečku vytvořit např. o 0,5 mm větší vůči velikosti modelu terénu.
+
 !!! warning "&nbsp;<span>Odevzdání úlohy</span>"
-    Připravený G-code ve tvaru **"prijmeni_jmeno_misto.bgcode"** odešlete na mail ```frantisek.muzik@fsv.cvut.cz``` do **úterý 21.10.2025** s informací, zda máte zájem o tisk fyzického modelu. 
+    Připravený G-code ve tvaru **"prijmeni_jmeno_misto.bgcode"** a projekt z PrusaSliceru **"prijmeni_jmeno_misto.3mf"** odešlete na mail ```frantisek.muzik@fsv.cvut.cz``` do **úterý 21.10.2025** s informací, zda máte zájem o tisk fyzického modelu. 
 
 !!! note "&nbsp;<span>Další zajímavé informace</span>"
     - 7 věcí, které ovlivňují kvalitu tisku: <https://josefprusa.cz/7-veci-ktere-ovlivnuji-kvalitu-tisku/>
