@@ -1,0 +1,952 @@
+<!DOCTYPE html><html lang="cs" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../cviceni1/">
+      
+      
+        <link rel="next" href="../cviceni3/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Cvičení 2 - Vizualizace 3D modelů pomocí moderních technologií (155YV3D)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%2013h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#map2model" class="md-skip">
+          Přeskočit obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Záhlaví">
+    <a href="../.." title="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" class="md-header__button md-logo" aria-label="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" data-md-component="logo">
+      
+  <img src="../../assets/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vizualizace 3D modelů pomocí moderních technologií (155YV3D)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cvičení 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hledat" placeholder="Hledat" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhledávání">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistit" aria-label="Vyčistit" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializace vyhledávání
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Karty" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Charakteristika předmětu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../cviceni1/" class="md-tabs__link">
+          
+  
+  
+  Cvičení
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigace" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" class="md-nav__button md-logo" aria-label="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" data-md-component="logo">
+      
+  <img src="../../assets/favicon.svg" alt="logo">
+
+    </a>
+    Vizualizace 3D modelů pomocí moderních technologií (155YV3D)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charakteristika předmětu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Cvičení
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cvičení
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cviceni1/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17h-2V9h-2V7h4m5-4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"></path></svg>
+  
+  <span class="md-ellipsis">
+    Základy 3D tisku
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 11a2 2 0 0 1-2 2h-2v2h4v2H9v-4a2 2 0 0 1 2-2h2V9H9V7h4a2 2 0 0 1 2 2m4-6H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"></path></svg>
+  
+  <span class="md-ellipsis">
+    3D tisk Open Street Map
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 11a2 2 0 0 1-2 2h-2v2h4v2H9v-4a2 2 0 0 1 2-2h2V9H9V7h4a2 2 0 0 1 2 2m4-6H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"></path></svg>
+  
+  <span class="md-ellipsis">
+    3D tisk Open Street Map
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#map2model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map2Model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Map2Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vyber-uzemi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Výběr území
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-uprava-parametru-modelu" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Úprava parametrů modelu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-rozdeleni-vrstvy-vodstva" class="md-nav__link">
+    <span class="md-ellipsis">
+      3) Rozdělení vrstvy vodstva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-stazeni-modelu-a-import-do-sliceru" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) Stažení modelu a import do sliceru
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-nastaveni-ve-sliceru" class="md-nav__link">
+    <span class="md-ellipsis">
+      5) Nastavení ve sliceru
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-export-modelu-pro-tisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) Export modelu pro tisk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cviceni3/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 10.5a1.5 1.5 0 0 1-1.5 1.5c.84 0 1.5.67 1.5 1.5V15c0 1.11-.89 2-2 2H9v-2h4v-2h-2v-2h2V9H9V7h4c1.11 0 2 .89 2 2m4-6H5c-1.09 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"></path></svg>
+  
+  <span class="md-ellipsis">
+    Základy 3D v ArcGIS Pro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cviceni10/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 9h2v6h-2zm7-4v14c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2M10 7H6v2h2v8h2zm8 2a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2c1.11 0 2-.89 2-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    Webová rozšířená realita
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cviceni11/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 9h2v6h-2zm7-4v14c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2M10 7H6v2h2v8h2zm8 2a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2c1.11 0 2-.89 2-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    Tvorba mobilní aplikace v&nbsp;Unity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>3D tisk Open Street Map</h1>
+
+<p>Model terénu pro 3D tisk je možné vygenerovat řadou způsobů (GIS, webové aplikace). Problém nastává při přidání povrchových vrstev (využití ploch, budovy, silnice, vodstvo). 3D modely, které využívají naše vlastní data je možné pro 3D tisk připravit pomocí desktopových nástrojů, které jsou pro nové uživatele náročné k&nbsp;použití. </p>
+<p>Takové modely lze připravit například následujícím způsobem: <strong>GIS</strong> (prostorová data, terén) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg></span> <strong>CityEngine</strong> (generování 3D modelů budov, úprava dat) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg></span> <strong>3D modelovací software</strong> - SketchUp/Blender (finalizace modelů, doplnění legendy či popisu) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg></span> <strong>slicer</strong> (příprava pro 3D tisk).</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/gis-ce-model-ukazka.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/gis-ce-model-ukazka.png" width="600"></a>
+    </p><figcaption>Ukázka 3D mapy vytvořené pomocí vlastních dat v GIS a CityEngine</figcaption><p></p>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">&nbsp;<span>Ukázky pokročilejších nástrojů</span></p>
+<ul>
+<li>
+<p>CityEngine: <a href="https://www.arcdata.cz/cs-cz/produkty/arcgis/arcgis-cityengine/uvod">https://www.arcdata.cz/cs-cz/produkty/arcgis/arcgis-cityengine/uvod</a></p>
+</li>
+<li>
+<p>BlenderGIS: <a href="https://github.com/domlysz/BlenderGIS">https://github.com/domlysz/BlenderGIS</a></p>
+</li>
+</ul>
+</div>
+<h2 id="map2model"><a href="https://map2model.com/">Map2Model</a></h2>
+<p>Díky volně dostupným webovým aplikacím je možné velmi jednoduše a dostupně připravit 3D model terénu včetně povrchových vrstev přímo ve webovém prohlížeči, např. pomocí nástroje <a href="https://map2model.com/">Map2Model</a>. V tomto nástroji lze připravit 3D mapu přímo pro tisk vytvořenou na základě dat <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Jednotlivé mapové vrstvy lze upravovat, částečně filtrovat či vyčlenit do samostatné vrstvy pro oddělený tisk (vodstvo).</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/map2model.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/map2model.png" width="1000"></a>
+    </p><figcaption>Úvodní stránka Map2Model    </figcaption><p></p>
+</figure>
+<h3 id="1-vyber-uzemi">1) Výběr území</h3>
+<p>V prvním kroku si vybereme území pro tisk. Při výběru území je nutné brát ohled na <strong>rozměry a úroveň generalizace finálního produktu</strong>. Je tedy vhodné vybrat menší území a po vytvoření náhledu tisku ve sliceru velikost výběru upravit podle potřeby.</p>
+<p>Nabízí se několik možností tvaru území, přičemž je možné libovolně měnit velikost území dle našich požadavků a limitů <strong>velikosti tiskové podložky</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Tip</span></p>
+<p>Pro základní velikost výřezu <strong>150 mm</strong> je doporučené mezní měřítko <strong>1 : 10 000</strong>. V menších měřítkách se již mohou zrácet detaily (např. cesty či budovy) kvůli přesnosti tisku.</p>
+</div>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/vyrez.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/vyrez.png" width="1000"></a>
+    </p><figcaption>Výběr území</figcaption><p></p>
+</figure>
+<ul>
+<li>
+<p>Nejprve vybereme území v mapě - buď vyplněním adresy nebo ručně.</p>
+</li>
+<li>
+<p>Následně si určímě tvar území a nakreslíme jeho výřez. Ten je možné měnit buď tlačítkem <em>Edit Shape</em> nebo nástroji v&nbsp;levé části mapového okna. Pokud potřebujeme mapu v daném měřítku, lze jej zadat tlačítkem <em>Map Scale</em>.</p>
+</li>
+<li>
+<p>Po výběru území si můžeme nastavit parametrem <em>Map Size</em> délku nejdelší strany mapového výřezu. Zároveň lze nastavit výšku podkladu <em>Base Layer</em>.</p>
+</li>
+<li>
+<p>V základním nastavení se mapa vygeneruje bez terénu. Ten je však možné přidat zaškrtnutím <em>Topography</em>. Po rozkliknutí celé nabídky se zobrazí možnosti pro další úpravu terénu. Obdobně můžeme přidat obrysový rámeček <em>Frame</em>. </p>
+</li>
+<li>
+<p>Pro náhled nad daty klikneme na tlačítko <em>Generate</em> a <em>3D Preview</em>.</p>
+</li>
+</ul>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/nahled-teren.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/nahled-teren.png" width="600"></a>
+    </p><figcaption>Náhled na vytvořený terén</figcaption><p></p>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Uložení projektu</span></p>
+<p>Projekt je možné uložit do formátu .json. Díky tomu se můžeme k návrhu kdykoliv vrátit a editovat jej dle potřeby.</p>
+<p></p><figure markdown>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/save-load.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/save-load.png" width="400"></a><p></p>
+</figure>
+</div>
+<h3 id="2-uprava-parametru-modelu">2) Úprava parametrů modelu</h3>
+<p>Pokud chceme upravit více parametrů 3D modelu - jako například výběr vrstev, filtraci různých typů budov/cest nebo nastavení výšky jednotlivých vrstev, tak je potřeba překliknout do záložky <em>Features</em> vlevo nahoře.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/features.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/features.png" width="800"></a>
+    </p><figcaption>Práce v záložce Features</figcaption><p></p>
+</figure>
+<p>Pro příklad můžeme provést následující úpravy:</p>
+<ul>
+<li>
+<p>Filtraci pěších cesty v&nbsp;nabídce <em>Roads</em> - <em>Include Footpaths</em> a snížení výšky cest na 0,4&nbsp;mm</p>
+</li>
+<li>
+<p>Nastavení výšky vrstvy travnatých ploch <em>Grass</em> na 0,2&nbsp;mm a výběr budov pouze s výměrou větší než 30 m<sup>2</sup>.</p>
+</li>
+<li>
+<p>Odebrání vrstev <em>Sand</em> a <em>Pier</em></p>
+</li>
+</ul>
+<p>Do mapy je možné přidat také vlastní cestu pomocí importu souboru .gpx. Takovou cestu získáme exportem trasy například z&nbsp;<a href="https://www.openstreetmap.org">OpenStreetMap</a>, <a href="https://graphhopper.com/maps/">GraphHopper</a> či <a href="https://mapy.com">Mapy.com</a>.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/upraveny-model.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/upraveny-model.png" width="800"></a>
+    </p><figcaption>Upravený 3D model s přidanou trasou</figcaption><p></p>
+</figure>
+<h3 id="3-rozdeleni-vrstvy-vodstva">3) Rozdělení vrstvy vodstva</h3>
+<p>Pro širší možnosti barevného tisku nebo pro tisk barevného modelu na jednobarevné tiskárně (rozdělením do více částí) je možné vyčlenit vrstvu vodstva do samostatné vrstvy. Ta bude následně vytisknuta zvlášť a model se na ni po tisku přilepí. Toto řešení není vhodné pro hornaté oblasti, neboť by výsledný model nebyl příliš pěkný z důvodu velkých rozdílů ve výšce terénu a spodní vrstvy. </p>
+<p>Oddělení vrstvy se nastaví v nabídce <em>Water</em> - <em>Cut Out Water</em>. Pro vytvoření podkladové vrstvy vodstva je potřeba zaškrtnout <em>Water Base</em>.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/water-nastaveni.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/water-nastaveni.png" width="600"></a>
+    </p><figcaption>Nastavení zobrazení vodstva</figcaption><p></p>
+</figure>
+<h3 id="4-stazeni-modelu-a-import-do-sliceru">4) Stažení modelu a import do sliceru</h3>
+<p>Pokud jsme s modelem spokojeni, pak klikneme na tlačítko <em>Generate Mesh</em> a následovně na <em>Export 3mf</em>. V tuto chvíli si také můžeme projekt uložit do .json.</p>
+<p>Stažený soubor .3mf otevřeme pomocí PrusaSliceru. Zobrazí se vyskakovací okno upozorňující na detekování objektu obsahujícího více částí - tlačítkem <em>Ano</em> povolíme hromadný import. Při volbě <em>Ne</em> by se všechny vrstvy načetly samostatně, čímž bychom přišli o&nbsp;vzájemné prostorové vztahy.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/vice-objektu-detekce.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/vice-objektu-detekce.png" width="600"></a>
+    </p><figcaption>Upozornění při načítání více samostatných objektů</figcaption><p></p>
+</figure>
+<p>Vložené objekty by měly být rozděleny na samostatné části, které můžeme přejmenovat pro lepší orientaci.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/zmena-popisu.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/zmena-popisu.png" width="1000"></a>
+    </p><figcaption>Zobrazení modelu v PrusaSliceru a přejmenovanání jednotlivých objektů</figcaption><p></p>
+</figure>
+<h3 id="5-nastaveni-ve-sliceru">5) Nastavení ve sliceru</h3>
+<p>Pro optimální tisk je potřeba přenastavit/upravit některá nastavení PrusaSliceru. V našem případě se jedná o změnu barev, určení filamentu, přidání obrysu a nastavení čistící věže.</p>
+<p>Kvůli barevnému tisku musíme mít nastavenou tiskárnu <em>Original Prusa XL - 5T Input Shaper 0.4 nozzle</em>. Správně zvolenou tiskárnu si ověříme tak, že v hlavní nabídce vidíme 5 různých filamentů namísto jednoho (základní nastavení).</p>
+<p><strong>Změna barev</strong> proběhne v záložce <em>Tiskárny</em> volbou daného extruderu (tiskové hlavy). Nastavení barev neovlivní výslednou barvu tisku (to vždy musíme vyřešit vhodně zvoleným filamentem), ale pro práci ve sliceru získáme lepší představu o vizuální podobě výsledného modelu. Jednotlivé plochy musíme barevně rozdělit tak, abychom se vešli do barevného limitu přístroje (5 barev pro Prusa XL).</p>
+<p>Na tomto příkladu si vybereme barvy následovně:</p>
+<table>
+<thead>
+<tr>
+<th>Extruder</th>
+<th>Povrch</th>
+<th>Barva</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>budovy</td>
+<td>tmavě šedá</td>
+</tr>
+<tr>
+<td>2</td>
+<td>voda</td>
+<td>modrá</td>
+</tr>
+<tr>
+<td>3</td>
+<td>podklad, travnaté plochy, pole, ostatní</td>
+<td>bílá</td>
+</tr>
+<tr>
+<td>4</td>
+<td>cesty</td>
+<td>černá</td>
+</tr>
+<tr>
+<td>5</td>
+<td>trasa</td>
+<td>červená</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/barvy.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/barvy.png" width="800"></a>
+    </p><figcaption>Změna barev a nastavní extruderu</figcaption><p></p>
+</figure>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/model-barvy.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/model-barvy.png" width="800"></a>
+    </p><figcaption>Výsledný barevný model</figcaption><p></p>
+</figure>
+<p>Dále musíme určit vhodné <strong>filamenty</strong> a jejich parametry. V základním nastavení se zobrazují pouze některé profily filamentů (liší se například výrobcem). V&nbsp;ideálním případě je vhodné začít s předem definovanými profily filamentů, tedy například <em>Prusament PLA</em>. </p>
+<p>Vybraný profil je možné editovat dle libosti (doporučeno až po porozumění základů 3D tisku). Nejčastěji upravovanými parametry jsou teplota či <a href="https://help.prusa3d.com/cs/article/stringovani-a-odkapavani-filamentu_1805">retrakce</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Tip</span></p>
+<p>Základní profily filamentů nelze přepsat. Pro jejich editaci je potřeba vytvořit kopii, kterou pak lze upravovat dle potřeby.</p>
+<p>Rozsáhlejší návod pro nastavení parametrů filamentu: <a href="https://youtu.be/Wxh3fsE_4Do?si=YGSaU8TLZua7pJ7I">https://youtu.be/Wxh3fsE_4Do?si=YGSaU8TLZua7pJ7I</a></p>
+</div>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/filamenty.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/filamenty.png" width="1000"></a>
+    </p><figcaption>Nastavení filamentů v PrusaSlicer</figcaption><p></p>
+</figure>
+<p>Pro zkvalitnění tisku můžeme v PrusaSliceru zapnout některá další nastavení. V tomto případě se bude jednat o <strong>obrys</strong> a <strong>čistící věž</strong>. Pro zlepšení přilnavosti je možné zapnout také límec. </p>
+<p>Obrys je tištěná linka ohraničující všechny modely na tiskové podložce. Obrys je tištěn vždy jako první a jeho hlavním učelem je stabilizovat průtok nataveného filamentu tryskou. Nastavíme jej v záložce <em>Nastavení tisku</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg></span> <em>Obrys a límec</em>. Přepíšeme počet smyček na 1. Ve stejné záložce je možné měnit parametry i pro límec. </p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/obrys_limec.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/obrys_limec.png" width="600"></a>
+    </p><figcaption>Nastavení obrysu a límce</figcaption><p></p>
+</figure>
+<p>Čistící věž je na tiskové podložce kvůli tomu, aby bylo možno zajistit ostré přechody barev a stabilní posun filamentu i po změně barvy. Využívá se tedy v&nbsp;případě multimateriálového (=barevného) tisku. Její nastavení nalezneme opět v záložce <em>Nastavení tisku</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg></span> <em>Více extruderů</em>.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/cvez.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/cvez.png" width="600"></a>
+    </p><figcaption>Nastavení čistící věže</figcaption><p></p>
+</figure>
+<p>Po slicování si můžeme zkontrolovat přidání nových parametrů tisku.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/obrys_cvez.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/obrys_cvez.png" width="800"></a>
+    </p><figcaption>Ukázka obrysu a čistící věže po vyslicování modelu</figcaption><p></p>
+</figure>
+<h3 id="6-export-modelu-pro-tisk">6) Export modelu pro tisk</h3>
+<p>Jestliže máme model připravený pro 3D tisk, existují dvě možnosti, jak jej exportovat do tiskárny. </p>
+<ul>
+<li>
+<p>Wifi tisk, pro který je potřeba spárovat konkrétní 3D tiskárnu s PrusaSlicerem na počítaci.</p>
+</li>
+<li>
+<p>Export ve formátu G-code, který do tiskárny přesuneme pomocí přenosného USB flash disku.</p>
+</li>
+</ul>
+<p>Po vyslicování modelu se zobrazí buď jedna nebo obě možnosti (dle předchozího párování s&nbsp;tiskárnou). V&nbsp;tomto případě využijeme možnosti <em>Exportovat G-code</em>. Soubor přesuneme na přenosný USB flash disk a následně jej vložíme do tiskárny manuálně.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/cviceni2/export.png" data-desc-position="bottom"><img alt="" src="../../assets/cviceni2/export.png" width="1000"></a>
+    </p><figcaption>Export modelu pro tisk</figcaption><p></p>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Tip</span></p>
+<p>Při tvorbě vlastního rámečku např. ve SketchUpu je nutné počítat s přesností 3D&nbsp;tisku. Je tedy vhodné vnitřní prostor rámečku vytvořit např. o&nbsp;0,5&nbsp;mm větší vůči velikosti modelu terénu.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">&nbsp;<span>Odevzdání úlohy</span></p>
+<p>Připravený G-code ve tvaru <strong>"prijmeni_jmeno_misto.bgcode"</strong> a projekt z PrusaSliceru <strong>"prijmeni_jmeno_misto.3mf"</strong> odešlete na mail <code>frantisek.muzik@fsv.cvut.cz</code> do <strong>úterý 21.10.2025</strong> s informací, zda máte zájem o&nbsp;tisk fyzického modelu. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">&nbsp;<span>Další zajímavé informace</span></p>
+<ul>
+<li>
+<p>7 věcí, které ovlivňují kvalitu tisku: <a href="https://josefprusa.cz/7-veci-ktere-ovlivnuji-kvalitu-tisku/">https://josefprusa.cz/7-veci-ktere-ovlivnuji-kvalitu-tisku/</a></p>
+</li>
+<li>
+<p>Obrys a límec: <a href="https://help.prusa3d.com/cs/article/obrys-a-limec_133969">https://help.prusa3d.com/cs/article/obrys-a-limec_133969</a></p>
+</li>
+<li>
+<p>Rafts, Skirts and Brims!: <a href="https://www.simplify3d.com/resources/articles/rafts-skirts-and-brims/">https://www.simplify3d.com/resources/articles/rafts-skirts-and-brims/</a></p>
+</li>
+<li>
+<p>Čistící věž: <a href="https://help.prusa3d.com/cs/article/chytra-cistici-vez_125010">https://help.prusa3d.com/cs/article/chytra-cistici-vez_125010</a></p>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Zpět na začátek
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://geomatics.fsv.cvut.cz" target="_blank">Katedra geomatiky</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2023-2025
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/CTUGeomatics" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/geomatics.ctu" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/geomatics.ctu" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Zkop\u00edrov\u00e1no do schr\u00e1nky", "clipboard.copy": "Kop\u00edrovat do schr\u00e1nky", "search.result.more.one": "1 dal\u0161\u00ed na t\u00e9to str\u00e1nce", "search.result.more.other": "# v\u00edce na t\u00e9to str\u00e1nce", "search.result.none": "Nenalezeny \u017e\u00e1dn\u00e9 dokumenty", "search.result.one": "Nalezen\u00fd dokument: 1", "search.result.other": "Nalezen\u00e9 dokumenty: #", "search.result.placeholder": "Pi\u0161te co se m\u00e1 vyhledat", "search.result.term.missing": "Chyb\u011bj\u00edc\u00ed", "select.version": "Vyberte verzi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
