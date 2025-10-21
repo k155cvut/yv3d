@@ -61,7 +61,29 @@ Postupně se představí několik různých způsobů zpracování a vizualizace
 
 ## Přednášky {: style="margin-bottom:0;"}
 
-[__Ing. Karel Pavelka__](https://geomatics.fsv.cvut.cz/employees/karel-pavelka-ml/) | [__Ing. Vojtěch Cehák__](https://geomatics.fsv.cvut.cz/employees/vojtech-cehak/)  | [__Ing. Michal Janovský, PhD.__](https://geomatics.fsv.cvut.cz/employees/michal-janovsky/) | [__Ing. František Mužík__](https://geomatics.fsv.cvut.cz/employees/frantisek-muzik/)
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-12.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__[Ing. Karel Pavelka, Ph.D.](https://geomatics.fsv.cvut.cz/employees/karel-pavelka-ml/) [:fontawesome-solid-square-envelope:](mailto:karel.pavelka@cvut.cz "karel.pavelka@cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.3x.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__[Ing. Vojtěch Cehák](https://geomatics.fsv.cvut.cz/employees/vojtech-cehak/) [:fontawesome-solid-square-envelope:](mailto:vojtech.cehak@fsv.cvut.cz "vojtech.cehak@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-15.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__[Ing. Michal Janovský, PhD.](https://geomatics.fsv.cvut.cz/employees/michal-janovsky/) [:fontawesome-solid-square-envelope:](mailto:michal.janovsky@fsv.cvut.cz "michal.janovsky@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.75x-4.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__[Ing. František Mužík](https://geomatics.fsv.cvut.cz/employees/frantisek-muzik/) [:fontawesome-solid-square-envelope:](mailto:frantisek.muzik@fsv.cvut.cz "frantisek.muzik@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+
+
+
+
 
 
 jsou spíše formou workshopu a bezprostředně předcházejí cvičením, s nimiž se mnohdy prolínají
