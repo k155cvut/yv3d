@@ -34,6 +34,9 @@ V prvním kroku si vybereme území pro tisk. Při výběru území je nutné br
 
 Nabízí se několik možností tvaru území, přičemž je možné libovolně měnit velikost území dle našich požadavků a limitů **velikosti tiskové podložky**.
 
+!!! tip "&nbsp;<span>Tip</span>"
+    Pro základní velikost výřezu **150 mm** je doporučené mezní měřítko **1 : 10 000**. V menších měřítkách se již mohou zrácet detaily (např. cesty či budovy) kvůli přesnosti tisku.
+
 <figure markdown>
 ![](../assets/cviceni2/vyrez.png){ width="1000" }
     <figcaption>Výběr území</figcaption>
