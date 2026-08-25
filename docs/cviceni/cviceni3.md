@@ -1,5 +1,5 @@
 ---
-icon: material/numeric-3-box
+icon: material/numeric-6-box
 title: Cvičení 3
 ---
 

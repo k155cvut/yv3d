@@ -1,6 +1,6 @@
 ---
-icon: material/numeric-1-box
-title: Cvičení 1
+icon: material/numeric-9-box
+title: Úvod do 3D tisku. Základní principy a jednobarevný tisk
 ---
 
 
@@ -11,7 +11,7 @@ title: Cvičení 1
 - kresba obdélníku s využitím nástrojů aplikace
 
 <figure markdown>
-![](../assets/cviceni3/img01_T2STL.png){ width="800" }
+![](../assets/uvod3Dtisk/img01_T2STL.png){ width="800" }
     <figcaption>Nástroj Terrain2STL</figcaption>
 </figure>
 
@@ -20,14 +20,14 @@ title: Cvičení 1
 
 
 <figure markdown>
-![](../assets/cviceni3/img02_T2STL.png){ width="800" }
+![](../assets/uvod3Dtisk/img02_T2STL.png){ width="800" }
     <figcaption>Výběr území a úprava parametrů</figcaption>
 </figure>
 
 - model se rozbalí a otevře v Prusa Sliceru: *Soubor* - *Importovat* - *Importovat STL*
 
 <figure markdown>
-![](../assets/cviceni3/img03_Prusa.png){ width="600" }
+![](../assets/uvod3Dtisk/img03_Prusa.png){ width="600" }
     <figcaption>Vygenerovaný model v Prusa Slicer</figcaption>
 </figure>
 
@@ -38,14 +38,14 @@ title: Cvičení 1
 - výsledný model se bude exportovat do SketchUpu 2015+ včetně 3D budov a topografie
 
 <figure markdown>
-![](../assets/cviceni3/img04_CADmapper.png){ width="800" }
+![](../assets/uvod3Dtisk/img04_CADmapper.png){ width="800" }
     <figcaption>Prostředí CAD Mapper</figcaption>
 </figure>
 
 - model lze následně prohlížet v různých pohledech před stažením
 
 <figure markdown>
-![](../assets/cviceni3/img05_CADmapper.png){ width="600" }
+![](../assets/uvod3Dtisk/img05_CADmapper.png){ width="600" }
     <figcaption>Model vygenerovaný pomocí CAD Mapper</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ title: Cvičení 1
 - výšku terénu a budov je následně možné měnit *funkcí Push/Pull*
 
 <figure markdown>
-![](../assets/cviceni3/img06_SKP.png){ width="600" }
+![](../assets/uvod3Dtisk/img06_SKP.png){ width="600" }
     <figcaption>Zobrzení části terénu ve SketchUpu</figcaption>
 </figure>
 
