@@ -203,7 +203,7 @@ Obrys je tištěná linka ohraničující všechny modely na tiskové podložce.
     <figcaption>Nastavení obrysu a límce</figcaption>
 </figure>
 
-čisticí věž je na tiskové podložce kvůli tomu, aby bylo možno zajistit ostré přechody barev a stabilní posun filamentu i po změně barvy. Využívá se tedy v případě multimateriálového (=barevného) tisku. Její nastavení nalezneme opět v záložce *Nastavení tisku* &rarr; *Více extruderů*.
+Čisticí věž je na tiskové podložce kvůli tomu, aby bylo možno zajistit ostré přechody barev a stabilní posun filamentu i po změně barvy. Využívá se tedy v případě multimateriálového (=barevného) tisku. Její nastavení nalezneme opět v záložce *Nastavení tisku* &rarr; *Více extruderů*.
 
 <figure markdown>
 ![](../assets/osm3Dtisk/cistici-vez.png){ width="600" }
@@ -245,4 +245,4 @@ Po vyslicování modelu se zobrazí buď jedna nebo obě možnosti (dle předcho
 
     - Rafts, Skirts and Brims!: <https://www.simplify3d.com/resources/articles/rafts-skirts-and-brims/>
 
-    - čisticí věž: <https://help.prusa3d.com/cs/article/chytra-cistici-vez_125010>
+    - Čisticí věž: <https://help.prusa3d.com/cs/article/chytra-cistici-vez_125010>
