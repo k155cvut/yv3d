@@ -140,38 +140,38 @@ Výuka je vedena formou workshopu, přičemž přednášky bezprostředně před
     <tr style="border-top:2px solid #aaa;">
       <td style="text-align:center; font-weight:bold; padding:8px 12px;">4</td>
       <td style="text-align:center; padding:8px 12px;">15.10.2026</td>
-      <td style="padding:8px 12px;">Pokročilé práce v Unreal Engine 6</td>
+      <td style="padding:8px 12px;">Další možnosti vizualizace 3D objektů</td>
       <td style="text-align:center; padding:8px 12px;">Karel Pavelka</td>
     </tr>
     <tr style="border-top:2px solid #aaa;">
       <td style="text-align:center; font-weight:bold; padding:8px 12px;">5</td>
       <td style="text-align:center; padding:8px 12px;">22.10.2026</td>
-      <td style="padding:8px 12px;">Další možnosti vizualizace 3D objektů</td>
-      <td style="text-align:center; padding:8px 12px;">Karel Pavelka</td>
-    </tr>
-    <tr style="border-top:2px solid #aaa;">
-      <td style="text-align:center; font-weight:bold; padding:8px 12px;">6</td>
-      <td style="text-align:center; padding:8px 12px;">29.10.2026</td>
       <td style="padding:8px 12px;">Úvod do 3D GIS</td>
       <td style="text-align:center; padding:8px 12px;">Vojtěch Cehák</td>
     </tr>
     <tr style="border-top:2px solid #aaa;">
-      <td style="text-align:center; font-weight:bold; padding:8px 12px;">7</td>
-      <td style="text-align:center; padding:8px 12px;">05.11.2026</td>
+      <td style="text-align:center; font-weight:bold; padding:8px 12px;">6</td>
+      <td style="text-align:center; padding:8px 12px;">29.10.2026</td>
       <td style="padding:8px 12px;">Úvod do procedurálního modelování</td>
       <td style="text-align:center; padding:8px 12px;">Vojtěch Cehák, Michal Janovský</td>
     </tr>
     <tr style="border-top:2px solid #aaa;">
-      <td style="text-align:center; font-weight:bold; padding:8px 12px;">8</td>
-      <td style="text-align:center; padding:8px 12px;">12.11.2026</td>
+      <td style="text-align:center; font-weight:bold; padding:8px 12px;">7</td>
+      <td style="text-align:center; padding:8px 12px;">05.11.2026</td>
       <td style="padding:8px 12px;">Práce s rastry, procedurální generování vegetace v Unreal Engine</td>
       <td style="text-align:center; padding:8px 12px;">Michal Janovský</td>
     </tr>
     <tr style="border-top:2px solid #aaa;">
-      <td style="text-align:center; font-weight:bold; padding:8px 12px;">9</td>
-      <td style="text-align:center; padding:8px 12px;">19.11.2026</td>
+      <td style="text-align:center; font-weight:bold; padding:8px 12px;">8</td>
+      <td style="text-align:center; padding:8px 12px;">12.11.2026</td>
       <td style="padding:8px 12px;">Úvod do 3D tisku. Základní principy a jednobarevný tisk</td>
       <td style="text-align:center; padding:8px 12px;">František Mužík</td>
+    </tr>
+    <tr style="border-top:2px solid #aaa;">
+      <td style="text-align:center; font-weight:bold; padding:8px 12px;">9</td>
+      <td style="text-align:center; padding:8px 12px;">19.11.2026</td>
+      <td style="padding:8px 12px;">Změna v rozvrhu - výuka jako v PONDĚLÍ SUDÉHO týdne</td>
+      <td style="text-align:center; padding:8px 12px;"></td>
     </tr>
     <tr style="border-top:2px solid #aaa;">
       <td style="text-align:center; font-weight:bold; padding:8px 12px;">10</td>
@@ -182,7 +182,7 @@ Výuka je vedena formou workshopu, přičemž přednášky bezprostředně před
     <tr style="border-top:2px solid #aaa;">
       <td style="text-align:center; font-weight:bold; padding:8px 12px;">11</td>
       <td style="text-align:center; padding:8px 12px;">03.12.2026</td>
-      <td style="padding:8px 12px;">Úvod do Unity. Marker-based AR</td>
+      <td style="padding:8px 12px;">Úvod do Unity. Markerless a marker-based AR</td>
       <td style="text-align:center; padding:8px 12px;">František Mužík</td>
     </tr>
     <tr style="border-top:2px solid #aaa;">
