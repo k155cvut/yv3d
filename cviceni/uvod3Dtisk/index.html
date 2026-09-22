@@ -1,0 +1,1024 @@
+<!DOCTYPE html><html lang="cs" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../cviceni3/">
+      
+      
+        <link rel="next" href="../osm3Dtisk/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Úvod do 3D tisku. Základní principy a jednobarevný tisk - Vizualizace 3D modelů pomocí moderních technologií (155YV3D)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%2013h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#prezentace" class="md-skip">
+          Přeskočit obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Záhlaví">
+    <a href="../.." title="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" class="md-header__button md-logo" aria-label="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" data-md-component="logo">
+      
+  <img src="../../assets/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vizualizace 3D modelů pomocí moderních technologií (155YV3D)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Úvod do 3D tisku. Základní principy a jednobarevný tisk
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hledat" placeholder="Hledat" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhledávání">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistit" aria-label="Vyčistit" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializace vyhledávání
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Karty" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Charakteristika předmětu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../cviceni3/" class="md-tabs__link">
+          
+  
+  
+  Cvičení
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigace" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" class="md-nav__button md-logo" aria-label="Vizualizace 3D modelů pomocí moderních technologií (155YV3D)" data-md-component="logo">
+      
+  <img src="../../assets/favicon.svg" alt="logo">
+
+    </a>
+    Vizualizace 3D modelů pomocí moderních technologií (155YV3D)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Charakteristika předmětu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cvičení
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cvičení
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cviceni3/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9h-4v2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4m4-4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-8 12h2v-2h-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Základy 3D v ArcGIS Pro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-6 8h-2V9h2zm0-4h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v2H9v2h4a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Úvod do 3D tisku. Základní principy a jednobarevný tisk
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-6 8h-2V9h2zm0-4h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v2H9v2h4a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Úvod do 3D tisku. Základní principy a jednobarevný tisk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#prezentace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prezentace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doporucena-literatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Doporučená literatura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#co-bude-potreba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co bude potřeba?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-nasnimani-objektu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Nasnímání objektu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-import-3d-modelu-a-zakladni-upravy-ve-sliceru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Import 3D modelu a&nbsp;základní úpravy ve sliceru
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-nastaveni-parametru-tisku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Nastavení parametrů tisku
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3) Nastavení parametrů tisku">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vyber-spravne-tiskarny-nastaveni-tisku-a-vyber-materialu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Výběr správné tiskárny, nastavení tisku a&nbsp;výběr materiálu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nastaveni-tiskovych-podper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nastavení tiskových podpěr
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-uprava-vytisteneho-modelu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Úprava vytištěného modelu
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../osm3Dtisk/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 9h2v6h-2zm7-4v14c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2M10 7H6v2h2v8h2zm8 2a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2c1.11 0 2-.89 2-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Barevný tisk. Tisk 3D modelu mapy města
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cviceni10/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 9h2v6h-2zm7-4v14c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2M10 7H6v2h2v8h2zm8 2a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2c1.11 0 2-.89 2-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Webová rozšířená realita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cviceni11/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 9h2v6h-2zm7-4v14c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2M10 7H6v2h2v8h2zm8 2a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2c1.11 0 2-.89 2-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Tvorba mobilní aplikace v&nbsp;Unity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Úvod do 3D tisku. Základní principy a jednobarevný tisk</h1>
+
+<h2 id="prezentace"><a href="https://docs.google.com/presentation/d/1j0gdW9ONigroddMcLznmx1z6jKLW65LkUTh5pNDGOTg/edit?usp=sharing">Prezentace</a></h2>
+<h2 id="doporucena-literatura">Doporučená literatura</h2>
+<ul>
+<li>Stříteský, O.&nbsp;a&nbsp;kol. (2021): <a href="https://is.muni.cz/el/ped/jaro2021/TI9009/111101390/zaklady-3d-tisku.pdf">Základy 3D tisku s&nbsp;Josefem Průšou</a></li>
+</ul>
+<hr>
+<p>Cílem úlohy je představení základů technologie 3D tisku metodou Fused Filament Fabrication (FFF), která je rozšířená v&nbsp;rámci cenově dostupných stolních tiskáren. Metoda je založena na nanášení roztaveného materiálu po tenkých vrstvách. Tato úloha pracuje s&nbsp;jednomateriálovým tiskem, tudíž model lze vytisknout na každé FFF 3D tiskárně.</p>
+<h2 id="co-bude-potreba">Co bude potřeba?</h2>
+<ul>
+<li>
+<p><strong>Objekt pro skenování</strong> – ideálně vybereme <strong>sochu</strong>, kterou jsme schopni nasnímat ze všech stran (tedy i&nbsp;ze shora)</p>
+</li>
+<li>
+<p><strong>Mobilní aplikace pro 3D skenování</strong> – zde si ukážeme postup v&nbsp;aplikaci <strong>Scaniverse</strong>. Případně lze použít také např. RealityScan.</p>
+</li>
+<li>
+<p>Počítačový software – volně dostupný <strong>PrusaSlicer</strong> (úlohu lze zpracovat v&nbsp;jakémkoliv jiném sliceru)</p>
+</li>
+</ul>
+<h2 id="1-nasnimani-objektu">1) Nasnímání objektu</h2>
+<p>Vyhlédnutý objekt skenujeme při denním světle a&nbsp;dbáme na to, abychom při skenování neohrožovali sebe či ostatní (například vstupem do silnice). V&nbsp;této ukázce pracujeme se sochou gryfa, která se nachází před zámkem Mokrosuky na Sušicku.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/socha_ukazka.jpg" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/socha_ukazka.jpg" width="600"></a>
+    </p><figcaption>Pohled na sochu před skenováním</figcaption><p></p>
+</figure>
+<p>Vybraný objekt nasnímáme pomocí mobilní aplikace pro 3D skenování Scaniverse.</p>
+<p>Pomocí tlačítka + vytvoříme nový sken. Vybereme možnost Mesh a&nbsp;Medium Object, jestliže jsme vybrali sochu zhruba o&nbsp;lidské velikosti. Poté spustíme samotné snímání.</p>
+<p>Při snímání je důležité:</p>
+<ul>
+<li>
+<p>pohybovat se kolem objektu <strong>pomalu</strong>,</p>
+</li>
+<li>
+<p>snímat objekt <strong>ze všech stran a&nbsp;z&nbsp;různých úhlů</strong>,</p>
+</li>
+<li>
+<p>zajistit <strong>dostatečný překryv snímků</strong>.</p>
+</li>
+</ul>
+<p>Po dokončení snímání zvolíme typ zpracování <strong>Detail</strong> a&nbsp;poté proběhne automatické vytvoření 3D modelu objektu. Vytvořený model je vhodné <strong>oříznout</strong> (<strong>Edit – Crop</strong>), aby zůstal pouze samotný objekt bez širšího okolí.</p>
+<p>Výsledný model poté <strong>exportujeme</strong> ve formátu <strong>.stl (Share – STL)</strong> a&nbsp;stáhneme si ho do počítače.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/Gryf_Scaniverse.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/Gryf_Scaniverse.png" width="1200"></a>
+    </p><figcaption>Postup skenování a&nbsp;editace v&nbsp;aplikaci Scaniverse</figcaption><p></p>
+</figure>
+<hr>
+<h2 id="2-import-3d-modelu-a-zakladni-upravy-ve-sliceru">2) Import 3D modelu a&nbsp;základní úpravy ve sliceru</h2>
+<p style="text-align: center;">
+<a class="md-button md-button--primary" href="https://www.printables.com/model/1851195-socha-gryfa-zamek-mokrosuky/files">Testovací model gryfa <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.678 4.8 12 9.6v9.6l8.322-4.8V4.8L12 0ZM12 19.2l-8.322-4.8V24Z"></path></svg></span></a>
+</p>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Tip</span></p>
+<p>Pokud využíváte testovací model gryfa, pak jej z&nbsp;webu Printables stáhněte ve formátu <strong>.STL</strong>. V tomto formátu je uložený samotný model. Celý projekt s&nbsp;nastavením v&nbsp;PrusaSliceru je dostupný jako soubor ve formátu .3mf.</p>
+</div>
+<p>Po úspěšném přesunu virtuálního 3D modelu na počítač se můžeme přesunout do <strong>PrusaSliceru</strong>. V&nbsp;této ukázce pracujeme s&nbsp;verzí 2.9.6. Slicer je software, ve kterém připravujeme modely pro 3D tisk a&nbsp;nastavujeme parametry tisku či použitý typ filamentu (materiálu).</p>
+<p>3D model importujeme do sliceru přes <strong>Soubor - Importovat - Importovat STL/3MF/STEP/OBJ/AMF</strong>.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/import.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/import.png" width="600"></a>
+    </p><figcaption>Import 3D modelu do PrusaSliceru</figcaption><p></p>
+</figure>
+<p>Při importu modelu může vyskočit hláška upozorňující na nevhodně zvolené jednotky modelu. Necháme je přepočítat. Pokud bychom však chtěli fyzický 3D model vytisknout v&nbsp;určitém specifickém měřítku (např. 1&nbsp;:&nbsp;100), musíme si ohlídat přepočtenou velikost modelu. </p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/jednotky.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/jednotky.png" width="600"></a>
+    </p><figcaption>Přepočet jednotek při importu</figcaption><p></p>
+</figure>
+<p>Nyní máme model ve sliceru, ale bude jej potřeba drobně upravit před odesláním k&nbsp;3D tisku. </p>
+<p>PrusaSlicer má velmi rozsáhlé možnosti nastavení, nicméně v&nbsp;této úloze budeme používat pouze základní funkce softwaru. Ty jsou dostupné z&nbsp;nabídky v&nbsp;levé části obrazovky:</p>
+<ul>
+<li>
+<p><strong>Přesunout</strong> - posouvání objektu po tiskové podložce</p>
+</li>
+<li>
+<p><strong>Měřítko</strong> - změna velikosti objektu</p>
+</li>
+<li>
+<p><strong>Otočit</strong> - otočení objektu v&nbsp;osách X, Y, Z</p>
+</li>
+<li>
+<p><strong>Umístit plochou na podložku</strong> - výběr plochy, která bude na tiskové podložce (místo ručního otáčení objektu)</p>
+</li>
+<li>
+<p><strong>Řezat</strong> - rozdělení modelu na části (lze využít, když je model moc velký, potřebujeme nějakou část smazat nebo chceme přidat konektory)</p>
+</li>
+<li>
+<p><strong>Malování podpěr</strong> - přidání podpěr pro podepření převisů v&nbsp;modelu</p>
+</li>
+<li>
+<p><strong>Multimateriálové malování</strong> - obarvení modelu při použití multimateriálového tisku</p>
+</li>
+<li>
+<p><strong>Měření</strong> - pravítko pro měření rozměrů částí modelu</p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Tip</span></p>
+<p>Pro editaci objektu jej musíme vždy vybrat levým tlačítkem myši.</p>
+</div>
+<p>Model si otočíme dle potřeby. Buď funkcí <strong>Otočit</strong>, ale vhodnější je <strong>Umístit plochou na podložku</strong>. Tato funkce totiž zajistí automaticky vhodný úhel natočení modelu. Při vybrání funkce se nám na modelu zobrazí dostupné plošky, na základě kterých můžeme model otočit. Vybereme plochu na spodní straně modelu.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/otoceni.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/otoceni.png" width="800"></a>
+    </p><figcaption>Otočení modelu dle potřeby</figcaption><p></p>
+</figure>
+<p>Pokud je potřeba, můžeme model oříznout funkcí <strong>Řezat</strong>, čímž se lze zbavit přebytečných částí modelu, které jsme neoříznuli v&nbsp;předchozím zpracování. Pomocí myši posuneme nebo případně natočíme rovinu řezu. Úpravy provedeme tlačítkem <strong>Provést řez</strong>. Model se takto rozdělí na dvě části, přičemž tu nechtěnou můžeme označit levým tlačítkem a&nbsp;smazat. V&nbsp;případě potřeby lze přidat i&nbsp;konektory, které slouží pro spojení dvou rozříznutých částí. Tato funkce se hodí například u&nbsp;rozložitelných modelů. Nyní ji však nevyužijeme.</p>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Tip</span></p>
+<p>Po potvrzení řezu můžeme být programem dotázáni na opravu otevřených hran nebo chyb. Ve většině případů je dobré nechat tyto problémy opravit, neboť předejdeme řadě problémům s&nbsp;výstiskem.</p>
+</div>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/rezat.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/rezat.png" width="800"></a>
+    </p><figcaption>Oříznutí nadbytečné části modelu</figcaption><p></p>
+</figure>
+<p>Model můžeme zmenšit či zvětšit do různého měřítka. V&nbsp;základním nastavení má model použitý v&nbsp;této ukázce rozměry 33x17x45&nbsp;mm. Velikost modelu můžeme buď změnit ručně funkcí <strong>Měřítko</strong> nebo přes panel <strong>Manipulace s&nbsp;objektem</strong> zadat požadované hodnoty. </p>
+<p>Pro odhad velikosti můžeme využít čtvercové sítě na virtuální tiskové podložce v&nbsp;PrusaSliceru. Každý čtverec má délku strany 10&nbsp;mm.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/meritko.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/meritko.png" width="800"></a>
+    </p><figcaption>Změna velikosti modelu</figcaption><p></p>
+</figure>
+<hr>
+<h2 id="3-nastaveni-parametru-tisku">3) Nastavení parametrů tisku</h2>
+<p>3D model máme nyní připravený, avšak musíme ještě nastavit několik parametrů tisku:</p>
+<ul>
+<li>
+<p>výběr správné tiskárny a&nbsp;nastavení tisku</p>
+</li>
+<li>
+<p>použitý materiál (filament)</p>
+</li>
+<li>
+<p>nastavení tiskových podpěr</p>
+</li>
+</ul>
+<h4 id="vyber-spravne-tiskarny-nastaveni-tisku-a-vyber-materialu">Výběr správné tiskárny, nastavení tisku a&nbsp;výběr materiálu</h4>
+<p>V&nbsp;pravé horní části hlavní obrazovky můžeme vybrat základní profil tisku v&nbsp;sekci <strong>Nastavení tisku</strong>. Profily se liší zejména ve výšce vrstvy a&nbsp;v&nbsp;rychlosti tisku. Vybereme výšku 0,2&nbsp;mm BALANCED, což je profil vhodný pro většinu výstisků. Pokud bychom chtěli zajistit větší detail, můžeme zvolit menší výšku vrstvy. </p>
+<p>Níže se nachází sekce pro výběr tiskového materiálu - nastavíme <strong>filament</strong> dle reálného materiálu, který používáme. V&nbsp;tomto případě Buddy3D PLA. </p>
+<p>Třetí položkou v&nbsp;celé sekci je <strong>Tiskárna</strong>, kde vybereme konkrétní tiskárnu včetně volby správného průměru trysky (0,4&nbsp;mm).</p>
+<div class="admonition tip">
+<p class="admonition-title">&nbsp;<span>Tip</span></p>
+<p>Pokročilé možnosti nastavení tisku se nacházejí v&nbsp;záložkách <strong>Nastavení tisku, Filamenty a&nbsp;Tiskárny</strong> v&nbsp;levé horní části programu.</p>
+</div>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/nastaveni.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/nastaveni.png" width="1200"></a>
+    </p><figcaption>Nastavení tisku</figcaption><p></p>
+</figure>
+<h4 id="nastaveni-tiskovych-podper">Nastavení tiskových podpěr</h4>
+<p>Pokud bychom nyní dali model tisknout, mohlo by se stát, že část modelu se vytiskne chybně, vzhledem k&nbsp;velkým převisům. Ve zkratce by to znamenalo, že tiskárna by se pokoušela tisknout "do vzduchu" bez jakéhokoliv nebo velmi malého podkladu. Problematická místa můžeme vizuálně objevit po slicování modelu (tlačítkem vpravo dole).</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/bez-podper.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/bez-podper.png" width="600"></a>
+    </p><figcaption>Pohled ze spodu vyslicovaného modelu na místa s&nbsp;převisem (modře), pod které by bylo vhodné doplnit podpěry.</figcaption><p></p>
+</figure>
+<p>Podpěry můžeme nastavit automatizovaně na základě detekovaných převisů, což je nejrychlejší způsob, který však umístí podpěry i&nbsp;na nepotřebná místa. Výsledkem je větší spotřeba materiálu a&nbsp;delší doba tisku. Druhou možností je ruční kreslení podpěr. Vybereme model levým tlačítkem myši a&nbsp;v&nbsp;levé části obrazovky zvolíme funkci <strong>Malování podpěr</strong>.</p>
+<p>Nastavíme <strong>Zvýraznění převisu podle úhlu</strong> na hodnotu 30, čímž vyfiltrujeme místa, kde by mohla mít tiskárna reálně problém. Dále zapneme <strong>Chytré vybarvení</strong> a&nbsp;vykreslení <strong>Pouze na převisech</strong>. Levým tlačítkem myši pak vybíráme světle modrá místa, kde se dokreslí podpěry. Pokud jsme s&nbsp;malováním podpěr spokojení, můžeme vpravo dole <strong>Slicovat</strong>.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/kresleni-podper.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/kresleni-podper.png" width="600"></a>
+    </p><figcaption>Manuální malování podpěr</figcaption><p></p>
+</figure>
+<p>V&nbsp;základním nastavení se v&nbsp;modelu vytvoří přiléhavé podpěry. Pro komplexní objekty jsou však vhodnější <strong>organické podpěry</strong>. </p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/nastaveni-podper.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/nastaveni-podper.png" width="400"></a>
+    </p><figcaption>Změna typu podpěr</figcaption><p></p>
+</figure>
+<p>Níže je vidět porovnání různých nastavení podpěr. Model gryfa můžeme vytisknout buď s&nbsp;použitím organických podpěr v&nbsp;základním nastavení nebo s&nbsp;možností položení podpěr pouze na podložce.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/podpery-typy.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/podpery-typy.png" width="800"></a>
+    </p><figcaption>Základní typy podpěr</figcaption><p></p>
+</figure>
+<p>Jestliže jsme s&nbsp;připraveným modelem spokojeni, můžeme jej poslat na tisk tlačítkem vpravo <strong>Exportovat G-code/Odeslat do služby Connect</strong>.</p>
+<hr>
+<h2 id="4-uprava-vytisteneho-modelu">4) Úprava vytištěného modelu</h2>
+<p>Hotový fyzický 3D model je potřeba očistit od podpěr či stringů (tenkých vláken filamentu, které vznikají nejčastěji při použití nevysušeného filamentu). Na očištění modelu jsou vhodné malé kleště a&nbsp;zalamovací nůž, přičemž je nutné pracovat <strong>VELMI OPATRNĚ, abychom předešli pořezání prstů</strong>. Zároveň je nutné brát v&nbsp;potaz křehkost modelu. Při nešikovné manipulaci můžeme omylem ulomit místo podpěry také část modelu. Ulomené části jdou velmi dobře dolepit s&nbsp;použitím modelářského lepidla.</p>
+<figure>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../assets/uvod3Dtisk/vysledek.png" data-desc-position="bottom"><img alt="" src="../../assets/uvod3Dtisk/vysledek.png" width="1000"></a>
+    </p><figcaption>Výsledný fyzický 3D model gryfa před a&nbsp;po odstranění podpěr</figcaption><p></p>
+</figure>
+<details class="note" open="open">
+<summary>&nbsp;<span style="color:#448aff">Užitečné odkazy</span></summary>
+<ul>
+<li>
+<p>Jak vytisknout svět nejen okolo nás na 3D tiskárně: <a href="https://blog.prusa3d.com/cs/jak-vytisknout-svet-nejen-okolo-nas-na-3d-tiskarne_29117/">https://blog.prusa3d.com/cs/jak-vytisknout-svet-nejen-okolo-nas-na-3d-tiskarne_29117/</a></p>
+</li>
+<li>
+<p>3D Printing and Photogrammetry: <a href="https://www.pix-pro.com/blog/3d-printing">https://www.pix-pro.com/blog/3d-printing</a></p>
+</li>
+<li>
+<p>How to 3D Print GIS Data from Global Mapper: <a href="https://www.bluemarblegeo.com/blog/how-to-3d-print-gis-data-from-global-mapper/">https://www.bluemarblegeo.com/blog/how-to-3d-print-gis-data-from-global-mapper/</a></p>
+</li>
+<li>
+<p>3D tisk UPOL: <a href="https://www.geoinformatics.upol.cz/veda-vyzkum/3d-tisk/">https://www.geoinformatics.upol.cz/veda-vyzkum/3d-tisk/</a></p>
+</li>
+<li>
+<p>Hmatové mapy: <a href="https://hmatovemapy.upol.cz/vystupy-projektu/">https://hmatovemapy.upol.cz/vystupy-projektu/</a></p>
+</li>
+<li>
+<p>How to Design 3D Population Maps Using Tinkercad: <a href="https://www.tinkercad.com/projects/How-to-Design-3D-Population-Maps-Using-Tinkercad">https://www.tinkercad.com/projects/How-to-Design-3D-Population-Maps-Using-Tinkercad</a></p>
+</li>
+<li>
+<p>How To Use RealityScan: <a href="https://youtu.be/HVkvHZCmVjU?si=L629gyrV5xjFkjMu">https://youtu.be/HVkvHZCmVjU?si=L629gyrV5xjFkjMu</a></p>
+</li>
+<li>
+<p>model totální stanice: <a href="https://cults3d.com/en/3d-model/art/leica-total-station-ms60-kit-to-assemble">https://cults3d.com/en/3d-model/art/leica-total-station-ms60-kit-to-assemble</a></p>
+</li>
+<li>
+<p>TouchTerrain: <a href="https://touchterrain.geol.iastate.edu/main">https://touchterrain.geol.iastate.edu/main</a></p>
+</li>
+<li>
+<p>TouchMapper: <a href="https://touch-mapper.org/en/area">https://touch-mapper.org/en/area</a></p>
+</li>
+</ul>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Zpět na začátek
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://geomatics.fsv.cvut.cz" target="_blank">Katedra geomatiky</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2023-2025
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/CTUGeomatics" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/geomatics.ctu" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/geomatics.ctu" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Zkop\u00edrov\u00e1no do schr\u00e1nky", "clipboard.copy": "Kop\u00edrovat do schr\u00e1nky", "search.result.more.one": "1 dal\u0161\u00ed na t\u00e9to str\u00e1nce", "search.result.more.other": "# v\u00edce na t\u00e9to str\u00e1nce", "search.result.none": "Nenalezeny \u017e\u00e1dn\u00e9 dokumenty", "search.result.one": "Nalezen\u00fd dokument: 1", "search.result.other": "Nalezen\u00e9 dokumenty: #", "search.result.placeholder": "Pi\u0161te co se m\u00e1 vyhledat", "search.result.term.missing": "Chyb\u011bj\u00edc\u00ed", "select.version": "Vyberte verzi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
