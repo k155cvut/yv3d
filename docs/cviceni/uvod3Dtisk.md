@@ -6,9 +6,17 @@ title: Úvod do 3D tisku. Základní principy a jednobarevný tisk
 
 ## [Prezentace](https://docs.google.com/presentation/d/1j0gdW9ONigroddMcLznmx1z6jKLW65LkUTh5pNDGOTg/edit?usp=sharing)
 
+## [Prezentace](https://drive.google.com/file/d/1eu5IXpObW9diPzaGL8Mkh5rfp8NK7VCb/view?usp=sharing)
+
 ## Doporučená literatura
 
 - Stříteský, O.&nbsp;a&nbsp;kol. (2021): [Základy 3D tisku s&nbsp;Josefem Průšou](https://is.muni.cz/el/ped/jaro2021/TI9009/111101390/zaklady-3d-tisku.pdf)
+
+- Mlejnek, T. (2026): [Trojrozměrná rekonstrukce zaniklého kostela sv. Martina v obci Brtníky metodou 3D tisku](https://rozvoj.fsv.cvut.cz/mlejnek_2026/). ČVUT v Praze.
+
+- Baguley, D. A. a kol. (2025): Review of VOC emissions from desktop 3D printers and associated health implications. J. Expo. Sci. Environ. Epidemiol., 36, 149–166.
+
+- van Altena, V. a Wabiński, J. (2026): Tactile Mapping: Cartography for People with Visual Impairments. 
 
 ---------
 
